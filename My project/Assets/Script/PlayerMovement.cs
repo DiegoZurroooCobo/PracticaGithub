@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     private KeyCode up = KeyCode.W;
+    private Vector2 dir;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(Input.GetKeyDown(up))
         {
-            new Vector2(0, 1);
+            dir = new Vector2(0, 1);
         }
     }
 }
